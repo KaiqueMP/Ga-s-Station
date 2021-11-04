@@ -1,49 +1,62 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Gás Statiom - Login</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <section>
-        <div class="container">
-            <div class="user signinBx">
-                <div class="imgBx"><img src="/assets/login-bg.jpg" alt=""></div>
-                <div class="formBx">
-                    <form action="">
-                        <h2>Entrar</h2>
-                        <input type="text" placeholder="Nome de usuário">
-                        <input type="password" placeholder="Senha">
-                        <input type="submit" value="Entrar">
-                        <p class="singUp">Não tem conta? <a href="#" onclick="toggleForm();">Cadastre-se.</a></p>
-                    </form>
-                </div>
-            </div>
-
-            <div class="user signUpBx">
-                <div class="formBx">
-                    <form action="">
-                        <h2>Criar uma conta</h2>
-                        <input type="text" placeholder="Nome de usuário">
-                        <input type="email" placeholder="E-mail">
-                        <input type="password" placeholder="Criar senha">
-                        <input type="password" placeholder="Confirmar senha">
-                        <input type="submit" value="Criar conta">
-                        <p class="singUp">Já tem uma conta? <a href="#" onclick="toggleForm();">Faça login.</a></p>
-                    </form>
-                </div>
-                <div class="imgBx"><img src="/assets/singUp-bg.jpg" alt=""></div>
-            </div>
+      <div class="container">
+        <div class="user signinBx">
+          <div class="imgBx"><img src="/assets/login-bg.jpg" alt="" /></div>
+          <div class="formBx">
+            <form action="">
+              <h2>Entrar</h2>
+              <input type="text" placeholder="Nome de usuário" />
+              <input type="password" placeholder="Senha" />
+              <input type="submit" value="Entrar" />
+              <p class="singUp">
+                Não tem conta?
+                <a href="#" onclick="toggleForm();">Cadastre-se.</a>
+              </p>
+            </form>
+          </div>
         </div>
+
+        <div class="user signUpBx">
+          <div class="formBx">
+            <form action="">
+              <h2>Criar uma conta</h2>
+              <input type="text" placeholder="Nome de usuário" />
+              <input type="email" placeholder="E-mail" />
+              <input type="password" placeholder="Criar senha" />
+              <input type="password" placeholder="Confirmar senha" />
+              <input type="submit" value="Criar conta" />
+              <p class="singUp">Ou faça login com:</p>
+
+              <div class="socialLogin">
+                <a href="#" class="facebook">facebook</a>
+                <a href="#" class="google">google</a>
+              </div>
+
+              <p class="singUp">
+                Já tem uma conta?
+                <a href="#" onclick="toggleForm();">Faça login.</a>
+              </p>
+            </form>
+          </div>
+          <div class="imgBx"><img src="/assets/singUp-bg.jpg" alt="" /></div>
+        </div>
+      </div>
     </section>
     <script>
-        function toggleForm(){
-        var container = document.querySelector('.container');
+      function toggleForm() {
+        var container = document.querySelector('.container')
         container.classList.toggle('active')
-}
+      }
     </script>
-</body>
+  </body>
 </html>
